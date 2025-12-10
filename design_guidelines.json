@@ -1,0 +1,151 @@
+{
+  "identity": {
+    "persona": "E1: The Anti-AI Designer",
+    "mission": "Create a visceral, retro-futuristic arcade experience that feels like a discovered artifact from 1985 but runs at 144hz.",
+    "principles": [
+      "Fusion: Mix 8-bit nostalgia with modern motion physics.",
+      "Emotion: Every pixel must pulse with 'Insert Coin' energy.",
+      "Contrast: Void black backgrounds vs. searing neon lasers.",
+      "Immersion: The UI is not an overlay; it is the cockpit."
+    ]
+  },
+  "typography": {
+    "headings": {
+      "font_family": "\"Press Start 2P\", cursive",
+      "weight": "400",
+      "usage": "Main titles, Game Over screens, Level headers",
+      "fallback": "cursive"
+    },
+    "body": {
+      "font_family": "\"Space Mono\", monospace",
+      "weight": "400",
+      "usage": "Instructions, lore, stats, leaderboard",
+      "fallback": "monospace"
+    },
+    "ui": {
+      "font_family": "\"Rajdhani\", sans-serif",
+      "weight": "600",
+      "usage": "Button labels, HUD elements, small UI text",
+      "fallback": "sans-serif"
+    },
+    "installation": "Import from Google Fonts: @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rajdhani:wght@500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');"
+  },
+  "colors": {
+    "palette": {
+      "background": {
+        "default": "#050505",
+        "paper": "#0A0A0A",
+        "overlay": "rgba(5, 5, 5, 0.85)"
+      },
+      "primary": {
+        "main": "#00FF94",
+        "glow": "0 0 10px #00FF94, 0 0 20px #00FF94",
+        "text": "#000000"
+      },
+      "secondary": {
+        "main": "#FF0055",
+        "glow": "0 0 10px #FF0055, 0 0 20px #FF0055",
+        "text": "#FFFFFF"
+      },
+      "accent": {
+        "cyan": "#00F0FF",
+        "purple": "#BD00FF",
+        "yellow": "#F5D300"
+      },
+      "neutral": {
+        "100": "#FFFFFF",
+        "200": "#E5E5E5",
+        "500": "#737373",
+        "800": "#262626",
+        "900": "#171717"
+      }
+    },
+    "usage_rules": [
+      "Never use gradients for backgrounds, only for 'laser' effects or text fills.",
+      "Text on 'primary' color must be BLACK for readability.",
+      "All interactive elements must have a 'glow' shadow on hover."
+    ]
+  },
+  "visual_enhancers": {
+    "scanlines": "Overlay a repeating linear gradient (transparent/black) to simulate CRT scanlines on the entire screen.",
+    "vignette": "Heavy radial gradient darkening the corners to focus attention on the center.",
+    "chromatic_aberration": "Slight RGB shift on text hover states.",
+    "borders": "Double borders: Outer solid, Inner dashed (simulating circuit paths)."
+  },
+  "layout_strategies": {
+    "landing_page": {
+      "type": "The Arcade Cabinet",
+      "structure": "Centered 'Screen' container surrounded by dark, mechanical UI framing. The user feels like they are standing in front of a machine.",
+      "grid": "Single column, vertically centered content."
+    },
+    "game_hud": {
+      "type": "The Cockpit",
+      "structure": "Absolute positioning. Health top-left, Score top-right, Weapons bottom-right.",
+      "style": "Transparent backgrounds with neon borders. No solid fills."
+    },
+    "level_select": {
+      "type": "The Star Map",
+      "structure": "Grid of 'Planets' (Levels) connected by faint lines.",
+      "interaction": "Hovering a level zooms the node and shows stats."
+    }
+  },
+  "components": {
+    "buttons": {
+      "style": "Pixelated corners (clip-path or box-shadow hack), uppercase text, blinking cursor icon on hover.",
+      "animation": "Press effect: translate-y-1 and remove shadow."
+    },
+    "cards": {
+      "style": "Black background, 2px neon border, scanline overlay opacity 0.1.",
+      "content": "Image top half, pixel text bottom half."
+    },
+    "modals": {
+      "style": "Retro 'System Alert' box. Centered, thick borders, typewriter effect for text."
+    }
+  },
+  "assets": {
+    "backgrounds": [
+      {
+        "url": "https://images.unsplash.com/photo-1698788370196-c12567cf663f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwyfHxwaXhlbCUyMGFydCUyMHNwYWNlJTIwYmFja2dyb3VuZCUyMHN0YXJzJTIwbmVidWxhfGVufDB8fHx8MTc2NTM2ODAwMHww&ixlib=rb-4.1.0&q=85",
+        "usage": "Main Game Canvas Background (Parallax Layer 1)",
+        "alt": "Deep space nebula"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1709409903284-2b830126d01e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwzfHxwaXhlbCUyMGFydCUyMHNwYWNlJTIwYmFja2dyb3VuZCUyMHN0YXJzJTIwbmVidWxhfGVufDB8fHx8MTc2NTM2ODAwMHww&ixlib=rb-4.1.0&q=85",
+        "usage": "Level Select Background",
+        "alt": "Star cluster"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1696360172919-f7fdaaa78a92?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwxfHxyZXRybyUyMGFyY2FkZSUyMG5lb24lMjBsaWdodHMlMjBnYW1pbmclMjBzZXR1cHxlbnwwfHx8fDE3NjUzNjgwMDN8MA&ixlib=rb-4.1.0&q=85",
+        "usage": "Landing Page Hero Background (Darkened)",
+        "alt": "Dark arcade room"
+      }
+    ],
+    "ui_elements": [
+      {
+        "url": "https://images.unsplash.com/photo-1759171053096-e7dbe7c36eb6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwyfHxyZXRybyUyMGFyY2FkZSUyMG5lb24lMjBsaWdodHMlMjBnYW1pbmclMjBzZXR1cHxlbnwwfHx8fDE3NjUzNjgwMDN8MA&ixlib=rb-4.1.0&q=85",
+        "usage": "New Game Card Thumbnail",
+        "alt": "Glowing arcade machines"
+      }
+    ]
+  },
+  "tech_stack_rules": {
+    "framework": "React + Tailwind CSS",
+    "game_engine": "HTML5 Canvas (Ref: use 'react-use-gesture' for controls if needed, or native event listeners)",
+    "state_management": "Zustand (recommended for game state) or React Context",
+    "backend_integration": "FastAPI endpoints for /save-game, /load-game, /leaderboard",
+    "styling": "Use 'clsx' and 'tailwind-merge' for dynamic classes."
+  },
+  "instructions_to_main_agent": [
+    "1. INSTALL FONTS FIRST: Add the Google Fonts import to index.css immediately.",
+    "2. SETUP TAILWIND: Extend the tailwind.config.js with the neon color palette defined above.",
+    "3. CREATE LAYOUT: Build a 'GameLayout' component that includes the CRT scanline effect overlay.",
+    "4. GAME LOOP: Ensure the Canvas component uses requestAnimationFrame for smooth 60fps.",
+    "5. ASSETS: Use the provided Unsplash URLs as backgrounds. For sprites (ship, enemies), use simple colored rectangles (Pixel Art style) if no images are available, or search for 'pixel art sprite sheet' if needed.",
+    "6. DATA-TESTID: Add data-testid to 'Start Game' button, 'Pause' button, and 'Save' button."
+  ],
+  "universal_guidelines": {
+    "design_philosophy": "Anti-AI Slop. Avoid generic rounded corners. Use sharp, jagged, pixelated edges.",
+    "interaction": "Hover states must be aggressive. Scale up, change color, emit glow.",
+    "accessibility": "Ensure neon text has sufficient contrast against black backgrounds. Use text-shadow to enhance readability."
+  }
+}
