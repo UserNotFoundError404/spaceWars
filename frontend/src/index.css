@@ -17,36 +17,12 @@ code {
 }
 
 @layer base {
-    :root {
-        --background: 5 5% 2%;
-        --foreground: 0 0% 98%;
-        --card: 10 10% 4%;
-        --card-foreground: 0 0% 98%;
-        --popover: 10 10% 4%;
-        --popover-foreground: 0 0% 98%;
-        --primary: 158 100% 50%;
-        --primary-foreground: 0 0% 0%;
-        --secondary: 348 100% 53%;
-        --secondary-foreground: 0 0% 100%;
-        --muted: 0 0% 15%;
-        --muted-foreground: 0 0% 64%;
-        --accent: 180 100% 50%;
-        --accent-foreground: 0 0% 9%;
-        --destructive: 348 100% 53%;
-        --destructive-foreground: 0 0% 98%;
-        --border: 0 0% 15%;
-        --input: 0 0% 15%;
-        --ring: 158 100% 50%;
-        --radius: 0rem;
-    }
-}
-
-@layer base {
     * {
-        @apply border-gray-800;
+        border-color: #262626;
     }
     body {
-        @apply bg-[#050505] text-foreground;
+        background-color: #050505;
+        color: #FFFFFF;
     }
 }
 
