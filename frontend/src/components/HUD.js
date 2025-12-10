@@ -2,7 +2,7 @@ import React from 'react';
 
 const HUD = ({ score, health, level, onPause, onSave }) => {
   return (
-    <div className="fixed inset-0 pointer-events-none z-50">
+    <div className="fixed inset-0 pointer-events-none" style={{ zIndex: 100 }}>
       <div className="absolute top-6 left-6 bg-black/80 border-2 border-neon-green pixel-corners p-4 pointer-events-auto">
         <div className="font-mono text-sm space-y-1">
           <div className="text-gray-400">SCORE</div>
