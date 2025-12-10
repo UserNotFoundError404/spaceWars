@@ -43,7 +43,7 @@ code {
 
 @layer base {
     * {
-        @apply border-border;
+        @apply border-gray-800;
     }
     body {
         @apply bg-[#050505] text-foreground;
