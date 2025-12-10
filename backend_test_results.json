@@ -1,0 +1,89 @@
+{
+  "summary": {
+    "total_tests": 10,
+    "passed_tests": 10,
+    "success_rate": 100.0
+  },
+  "detailed_results": [
+    {
+      "test": "Root API Endpoint",
+      "method": "GET",
+      "endpoint": "",
+      "expected_status": 200,
+      "actual_status": 200,
+      "success": true
+    },
+    {
+      "test": "Get Levels",
+      "method": "GET",
+      "endpoint": "levels",
+      "expected_status": 200,
+      "actual_status": 200,
+      "success": true
+    },
+    {
+      "test": "Save Game",
+      "method": "POST",
+      "endpoint": "game/save",
+      "expected_status": 200,
+      "actual_status": 200,
+      "success": true
+    },
+    {
+      "test": "Get Saved Games",
+      "method": "GET",
+      "endpoint": "game/saves",
+      "expected_status": 200,
+      "actual_status": 200,
+      "success": true
+    },
+    {
+      "test": "Load Game",
+      "method": "GET",
+      "endpoint": "game/load/f980529a-26aa-4948-aeec-f791ff8d8516",
+      "expected_status": 200,
+      "actual_status": 200,
+      "success": true
+    },
+    {
+      "test": "Delete Game",
+      "method": "DELETE",
+      "endpoint": "game/delete/f980529a-26aa-4948-aeec-f791ff8d8516",
+      "expected_status": 200,
+      "actual_status": 200,
+      "success": true
+    },
+    {
+      "test": "Submit Score",
+      "method": "POST",
+      "endpoint": "leaderboard",
+      "expected_status": 200,
+      "actual_status": 200,
+      "success": true
+    },
+    {
+      "test": "Get Leaderboard",
+      "method": "GET",
+      "endpoint": "leaderboard",
+      "expected_status": 200,
+      "actual_status": 200,
+      "success": true
+    },
+    {
+      "test": "Load Non-existent Game",
+      "method": "GET",
+      "endpoint": "game/load/invalid-id",
+      "expected_status": 404,
+      "actual_status": 404,
+      "success": true
+    },
+    {
+      "test": "Delete Non-existent Game",
+      "method": "DELETE",
+      "endpoint": "game/delete/invalid-id",
+      "expected_status": 404,
+      "actual_status": 404,
+      "success": true
+    }
+  ]
+}
